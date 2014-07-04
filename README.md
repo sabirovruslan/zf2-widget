@@ -1,4 +1,4 @@
-zf2-widget
+ZF2-widget
 ==========
 
 If you had an experience with Yii2 (or Yii 1.11), you could know about Widgets.
@@ -20,7 +20,7 @@ class Panel
 
   public function init()
   {
-    echo '<div class="panel panel-default">';
+    echo '<div class="panel panel-primary">';
       echo '<div class="panel-heading"><span class="glyphicon glyphicon-' . $this->icon . '"></span>' . $this->title . '</div>';
       echo '<div class="panel-body">';
   }
@@ -41,7 +41,22 @@ When you want to use in your view, you can use this:
 <?php Panel::begin(['title' => 'My Panel', 'icon' => 'cloud']) ?>
 
 <!-- Here you will write your code.... -->
+Here my content
 
 <?php Panel::end() ?>
 
+```
+
+This code will render:
+
+```php
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <span class="glyphicon glyphicon-cloud"></span>My Panel
+  </div>
+  <div class="panel-body">
+    <!-- Here you will write your code.... -->
+    Here my content
+  </div>
+</div>
 ```
