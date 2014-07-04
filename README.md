@@ -63,6 +63,45 @@ This code will render:
 
 You can learn more in this link: https://github.com/yiisoft/yii2/blob/master/docs/guide/structure-widgets.md
 
+New Feature
+-------------
+
+Now you can use the Html Helper class (Yii) in your Zend App.
+
+The same example here:
+
+```php
+<?php
+
+namespace Admin\Widget;
+
+use TokenPost\Widget\Widget;
+use TokenPost\Widget\Html;
+
+class Panel extends Widget
+{
+  public $title;
+  public $icon;
+
+  public function init()
+  {
+      echo Html::beginTag('div',['class'=>'panel panel-primary']);
+        echo Html::beginTag('div',['class'=>"panel-heading"]);
+        echo Html::tag('span','',['class'=>'glyphicon glyphicon-' . $this->icon]) . $this->title;
+        echo Html::endTag('div');
+
+      echo Html::beginTag('div',['class'=>'panel-body']);
+  }
+
+  public function run()
+  {
+      echo Html::endTag('div');
+    echo Html::endTag('div');
+  }
+}
+}
+```
+
 Bug report
 -------------
 
