@@ -1,3 +1,22 @@
 {
-  "name":"ZF2 Widget"
+	"name": "tokenpost/zf2-widget",
+	"keywords": ["Html","Zend Framework 2","php","ZF2","Widget", "Helper"],
+	"description": "Similar to Yii Widgets for ZF2.",
+	"license": "MIT",
+
+	"authors": [
+		{
+	        	"name": "Renato Cassino",
+	        	"email": "renatocassino@gmail.com"
+		}
+	],
+	"minimum-stability": "beta",
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"TokenPost": "src/"
+		}
+	}
 }
