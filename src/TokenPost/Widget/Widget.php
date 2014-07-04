@@ -111,10 +111,10 @@ class Widget
 	    }
 
 	    $class = new $class;
-	    foreach($config as $key => $value)
-	    {
-	        if(isset($class->$key))
+	    foreach($config as $key => $value) {
+	        if(property_exists($class, $key)) {
 	            $class->$key = $value;
+	        }
 	    }
 
 	    return $class;
