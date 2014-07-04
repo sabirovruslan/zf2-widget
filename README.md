@@ -49,7 +49,7 @@ Here my content
 
 This code will render:
 
-```php
+```html
 <div class="panel panel-primary">
   <div class="panel-heading">
     <span class="glyphicon glyphicon-cloud"></span>My Panel
