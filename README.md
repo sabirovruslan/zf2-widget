@@ -60,3 +60,10 @@ This code will render:
   </div>
 </div>
 ```
+
+You can learn more in this link: https://github.com/yiisoft/yii2/blob/master/docs/guide/structure-widgets.md
+
+Bug report
+-------------
+
+If you have a problem, sendme a message < renatocassino@gmail.com >
